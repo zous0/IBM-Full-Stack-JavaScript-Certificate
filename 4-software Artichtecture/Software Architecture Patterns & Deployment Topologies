@@ -1,0 +1,51 @@
+# Software Architecture Patterns & Deployment Topologies
+
+## 1. Core Architectural Patterns
+
+* **2-Tier (Client-Server):** Direct interaction between the client interface and the database/server without intermediate application logic layers.
+  * *Example:* Legacy SMS gateways, traditional desktop applications connected directly to a local DB.
+* **3-Tier (N-Tier):** Clean separation of responsibilities into three distinct layers:
+  1. **Presentation Layer:** Front-end user interface.
+  2. **Application Layer:** Business logic and API processing.
+  3. **Data Layer:** Persistent storage (Database).
+  * *Example:* Modern web applications and e-commerce platforms.
+* **Peer-to-Peer (P2P):** Decentralized network topology where every participating computer acts as both client and server simultaneously.
+  * *Example:* Blockchain/Bitcoin networks, BitTorrent file sharing.
+* **Event-Driven:** Asynchronous communication model structured around **event producers**, event brokers, and **event consumers** reacting to state changes in real time.
+  * *Example:* Live GPS location updates in ride-sharing apps like Uber.
+* **Microservices:** Decomposition of a monolithic application into small, independent, specialized services that communicate over network protocols (e.g., HTTP/REST or gRPC).
+  * *Example:* Streaming platforms (Netflix, Twitch) and large social networks (Instagram).
+
+---
+
+## 2. Fundamental Architectural Principles
+
+* **Tightly Coupled:** Components depend heavily on each other's internal logic; changing one component risks causing breaking changes in dependent systems.
+* **Loosely Coupled:** Components interact strictly through clean, standardized APIs or events; internal implementations can change without breaking connected services.
+* **Extensibility:** The ability to add new features or behaviors to an application architecture without modifying or breaking existing code.
+
+---
+
+## 3. Deployment Environments & Cloud Models
+
+### Lifecycle Environments
+1. **Development (Dev):** Sandbox environment where engineers actively write, edit, and test code locally.
+2. **QA / Testing:** Dedicated space for quality assurance teams to perform manual and automated testing.
+3. **Staging:** An exact replica of the live Production environment used for final pre-release validation (hidden from end-users).
+4. **Production (Prod):** Live customer environment required to handle real-world user load, traffic spikes, security, and high availability metrics.
+
+### Cloud Deployment Topologies
+* **Public Cloud:** Multi-tenant infrastructure hosted and managed by third-party providers (e.g., AWS, IBM Cloud, Azure).
+* **Private Cloud:** Cloud infrastructure dedicated exclusively to a single organization.
+* **Hybrid Cloud:** Integrated environment combining both private and public cloud infrastructures.
+
+---
+
+## 4. Production Infrastructure Components
+
+* **Firewall:** Monitors and filters inbound and outbound traffic based on security policies to block unauthorized access.
+* **Load Balancer:** Prevents server crashes by distributing incoming network traffic evenly across a pool of application servers.
+* **Web Server:** Serves static assets (HTML, CSS, JavaScript, images) directly to client browsers (e.g., Nginx, Apache).
+* **Application Server:** Executes dynamic backend business logic, API requests, and database interactions.
+* **Proxy Server:** Serves as an intermediary handling request caching, SSL termination, and IP anonymization.
+* **Database Server (DBMS):** Manages structured/unstructured persistent data storage and high-availability replicas.
