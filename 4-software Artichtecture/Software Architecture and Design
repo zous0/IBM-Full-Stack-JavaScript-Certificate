@@ -31,9 +31,9 @@
 ## 4. Multi-Tier & Architectural Patterns
 * **Two-Tier Architecture:** Direct client-to-database connection. Simple, but suffers from low security and scalability issues.
 * **Three-Tier Architecture:** Inserts an Application Server between Client and Database.
-  * **Presentation Tier:** User Interface (Frontend).
-  * **Application Tier:** Business logic and authorization (Backend).
-  * **Data Tier:** Persistent data storage (Database).
+  * Presentation Tier:** User Interface (Frontend).
+  * Application Tier:** Business logic and authorization (Backend).
+  * Data Tier:** Persistent data storage (Database).
 * **Event-Driven Architecture:** Asynchronous communication where **Producers** emit events to a **Broker**, and **Consumers** react independently.
 * **Microservices:** Breaking monolithic systems into small, independently deployable services that communicate via APIs. Trade-off includes increased network latency ("network hops").
 * **Peer-to-Peer (P2P):** Decentralized network where every node acts as both client and server without a central authority.
