@@ -1,1 +1,22 @@
+1. What is JavaScript?
+JavaScript is a programming language.
+There are two environments you should understand right now.
 
+Browser
+
+The browser provides a JavaScript runtime for web pages.
+
+For example:
+
+document.querySelector("h1");
+
+You can interact with:
+
+HTML
+CSS
+DOM
+Buttons
+Forms
+Browser storage
+URLs
+Events
