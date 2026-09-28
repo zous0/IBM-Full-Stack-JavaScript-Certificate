@@ -3,7 +3,22 @@ Explicit Conversion (manual) and Implicit Conversion / Coercion (automatic by th
 
 
 
+- `String()`
+- `Number()`
+- `Boolean()`
+- Parsing numbers
+- Common conversion mistakes
 
+Practice:
+
+```javascript
+const age = "25";
+
+console.log(Number(age));
+console.log(String(100));
+console.log(Boolean(1));
+console.log(Boolean(0));
+```
 
 
 
