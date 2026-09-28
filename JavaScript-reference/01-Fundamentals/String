@@ -1,0 +1,31 @@
+1. Basic Properties
+JavaScript
+let str = "Hello World";
+
+str.length; // 11 (returns character count)
+str[0];      // "H" (gets character by index)
+
+2. Searching & Checking
+JavaScript
+str.includes("World"); // true (checks if substring exists)
+str.indexOf("o");      // 4 (returns first position of 'o')
+str.startsWith("H");   // true
+str.endsWith("d");     // true
+
+3. Modifying Strings
+JavaScript
+str.toUpperCase();     // "HELLO WORLD"
+str.toLowerCase();     // "hello world"
+str.trim();            // Removes whitespace from both ends
+
+4. Cutting & Splitting
+JavaScript
+str.slice(0, 5);       // "Hello" (cuts from index 0 to 4)
+str.replace("World", "JS"); // "Hello JS"
+str.split(" ");        // ["Hello", "World"] (turns string into array)
+💡 Core Pattern: String Iteration
+JavaScript
+// Loop through every character in a string
+for (let i = 0; i < str.length; i++) {
+    console.log(str[i]);
+}
