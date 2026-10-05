@@ -1,1 +1,82 @@
+# JavaScript Type Conversion (Quick Reference)
 
+Type conversion changes a value from one data type to another.
+
+---
+
+## 1. `String()` — Convert to Text
+
+Turns any value into text.
+
+```javascript
+String(123);       // "123"
+String(true);      // "true"
+String(null);      // "null"
+
+```
+
+---
+
+## 2. `Number()` — Convert to Numbers
+
+Turns valid text or booleans into numbers.
+
+```javascript
+Number("42");      // 42
+Number(true);      // 1
+Number("hello");   // NaN (Not a Number)
+
+```
+
+---
+
+## 3. `Boolean()` — True or False
+
+Converts values to `true` or `false`.
+
+* **Only 6 Falsy values (`false`):** `false`, `0`, `""` (empty string), `null`, `undefined`, `NaN`.
+* **Everything else is Truthy (`true`).**
+
+```javascript
+Boolean(0);        // false
+Boolean("hello");  // true
+Boolean("0");      // true (non-empty string!)
+
+```
+
+---
+
+## 4. `parseInt()` & `parseFloat()` — Parsing Numbers
+
+Use these to extract numbers from text with units (reads left to right).
+
+```javascript
+parseInt("42px");     // 42  (integers)
+parseFloat("3.14em"); // 3.14 (decimals)
+
+```
+
+---
+
+## 5. Top 3 Mistakes to Avoid
+
+1. **`+` combines strings instead of adding:**
+```javascript
+"5" + 2; // "52" (use Number("5") + 2 to get 7)
+
+```
+
+
+2. **`Number()` vs `parseInt()`:**
+```javascript
+Number("100px");   // NaN (strict)
+parseInt("100px"); // 100 (extracts digits)
+
+```
+
+
+3. **Text `"0"` is `true`:**
+```javascript
+Boolean("0"); // true (any non-empty text is true)
+
+```
