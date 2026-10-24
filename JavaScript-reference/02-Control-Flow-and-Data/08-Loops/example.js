@@ -1,4 +1,4 @@
-// Run: node 08-Loops/example.js
+// Run: node 08-loops/example.js
 console.log('FOR: numbered tasks');
 for (let number = 1; number <= 3; number++) {
   console.log(`Task ${number}`);

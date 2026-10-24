@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product Search — JavaScript Practice</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <p class="eyebrow">JavaScript mini project</p>
+        <h1>Product Search</h1>
+        <p>Search, filter, and sort a small list of sample products.</p>
+      </header>
+
+      <section class="controls" aria-label="Product filters">
+        <div class="field">
+          <label for="search">Search products</label>
+          <input id="search" type="search" placeholder="Try keyboard or mouse" />
+        </div>
+        <div class="field">
+          <label for="category">Category</label>
+          <select id="category">
+            <option value="all">All categories</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Audio">Audio</option>
+            <option value="Displays">Displays</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="sort">Sort</label>
+          <select id="sort">
+            <option value="default">Default order</option>
+            <option value="low">Price: low to high</option>
+            <option value="high">Price: high to low</option>
+          </select>
+        </div>
+      </section>
+
+      <p id="result-count" role="status" aria-live="polite"></p>
+      <div id="product-list" class="products"></div>
+    </main>
+  </body>
+</html>

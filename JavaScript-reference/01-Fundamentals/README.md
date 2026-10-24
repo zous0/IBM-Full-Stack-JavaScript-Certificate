@@ -1,25 +1,25 @@
-# 01-Fundamentals — JavaScript Learning Journey
+# 01 — Fundamentals
 
-This directory contains my study notes, code examples, and practical exercises covering core JavaScript fundamentals.
+This section is where I started with JavaScript. It covers the basics I need before working with larger programs.
 
----
+| Topic | File |
+| --- | --- |
+| JavaScript and the console | [01-setup-and-console.md](./01-setup-and-console.md) |
+| Variables (`let` and `const`) | [02-variables.js](./02-variables.js) |
+| Data types | [03-data-types.md](./03-data-types.md) |
+| Operators | [04-operators.md](./04-operators.md) |
+| Strings | [05-strings.md](./05-strings.md) |
+| Type conversion | [06-type-conversion.md](./06-type-conversion.md) |
+| Conditions | [07-conditions.md](./07-conditions.md) |
+| Form input exercise | [form-input-mini-project.js](./form-input-mini-project.js) |
 
-## 📌 Topics Covered
+## Try the code
 
-1. **Setup and Console** — Development environment setup and using `console.log()` for debugging.
-2. **Variables** — Declaring variables using `let`, `const`, and `var`.
-3. **Data Types** — Understanding Primitive (String, Number, Boolean, Null, Undefined, Symbol, BigInt) and Reference types.
-4. **Operators** — Arithmetic, assignment, comparison, and logical operators.
-5. **Strings** — String manipulation, template literals (`${}`), and built-in methods.
-6. **Type Conversion** — Explicit conversion (`String()`, `Number()`, `Boolean()`) and parsing methods (`parseInt()`, `parseFloat()`).
-7. **Conditions** — Control flow using `if...else` statements, ternary operators, and `switch` statements.
-8. **Exercises & Mini Project** — Practical exercises and a real-world mini-project demonstrating key concepts.
-
----
-
-## 🚀 How to Run the Code
-
-You can run any script in this folder using **Node.js**:
+From the repository root:
 
 ```bash
-node 8-Exercises&Mini\ project.js
+node javascript/01-fundamentals/02-variables.js
+node javascript/01-fundamentals/form-input-mini-project.js
+```
+
+The form exercise takes values that look like HTML form input, converts them into numbers or text, and prints an order summary. It's a command-line example, not a website.

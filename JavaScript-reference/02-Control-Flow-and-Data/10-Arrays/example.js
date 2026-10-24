@@ -1,4 +1,4 @@
-// Run: node 10-Arrays/example.js
+// Run: node 10-arrays/example.js
 const fruits = ['apple', 'banana', 'orange'];
 console.log('First fruit:', fruits[0]);
 console.log('Length:', fruits.length);

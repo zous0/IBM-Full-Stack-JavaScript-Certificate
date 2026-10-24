@@ -1,4 +1,4 @@
-// Run: node 11-Array-Methods/example.js
+// Run: node 11-array-methods/example.js
 const products = [
   { name: 'Laptop', price: 1000 },
   { name: 'Phone', price: 700 },

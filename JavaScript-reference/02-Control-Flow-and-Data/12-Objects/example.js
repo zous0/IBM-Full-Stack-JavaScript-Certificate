@@ -1,4 +1,4 @@
-// Run: node 12-Objects/example.js
+// Run: node 12-objects/example.js
 const product = {
   name: 'Laptop',
   price: 1000,

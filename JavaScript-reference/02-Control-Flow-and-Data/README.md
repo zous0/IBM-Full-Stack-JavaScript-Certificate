@@ -1,48 +1,28 @@
-# Control Flow & Data in JavaScript
+# 02 — Control flow and data
 
-This part of my JavaScript reference covers the basics I use to make programs **repeat work, organize information, and turn data into useful results**.
+These are the JavaScript topics I use to work with lists of data and avoid repeating code.
 
-I kept each topic short enough to revisit later, with code I can actually run and change. The examples are intentionally small; the product-data mini project brings them together.
+| Topic | What I use it for |
+| --- | --- |
+| [08 — Loops](./08-loops/) | Repeating work |
+| [09 — Functions](./09-functions/) | Reusing logic |
+| [10 — Arrays](./10-arrays/) | Storing lists |
+| [11 — Array methods](./11-array-methods/) | Finding and changing list data |
+| [12 — Objects](./12-objects/) | Keeping related values together |
+| [13 — Iteration](./13-iteration/) | Going through arrays and objects |
 
-## Topics
+Every topic has an `example.js` file, a short README, and practice questions.
 
-| Topic | The main question it answers | Notes | Working code |
-| --- | --- | --- | --- |
-| 08 · Loops | How do I repeat an action? | [Read](./08-Loops/README.md) | [example.js](./08-Loops/example.js) |
-| 09 · Functions | How do I reuse logic? | [Read](./09-Functions/README.md) | [example.js](./09-Functions/example.js) |
-| 10 · Arrays | How do I keep a list of values? | [Read](./10-Arrays/README.md) | [example.js](./10-Arrays/example.js) |
-| 11 · Array Methods | How do I search, filter, or transform a list? | [Read](./11-Array-Methods/README.md) | [example.js](./11-Array-Methods/example.js) |
-| 12 · Objects | How do I describe one thing with several properties? | [Read](./12-Objects/README.md) | [example.js](./12-Objects/example.js) |
-| 13 · Iteration | How do I visit the items in a list or object? | [Read](./13-Iteration/README.md) | [example.js](./13-Iteration/example.js) |
+- [Quick cheat sheet](./CHEATSHEET.md)
+- [Product-data mini project](./mini-project/)
 
-**Quick links:** [Cheat sheet](./CHEATSHEET.md) · [Product-data mini project](./mini-project/README.md)
+## Run an example
 
-## Running the examples
-
-You need [Node.js](https://nodejs.org/) installed. Clone/download the repository, open the folder in VS Code, then use the terminal:
-
-```bash
-node 02-Control-Flow-and-Data/08-Loops/example.js
-node 02-Control-Flow-and-Data/11-Array-Methods/example.js
-node 02-Control-Flow-and-Data/mini-project/product-data.js
-```
-
-If your terminal is already **inside** `02-Control-Flow-and-Data`, remove the first folder name:
+From the repository root:
 
 ```bash
-node 08-Loops/example.js
+node javascript/02-control-flow-and-data/11-array-methods/example.js
+node javascript/02-control-flow-and-data/mini-project/product-data.js
 ```
 
-All examples run locally, without packages or API keys.
-
-## How I study each topic
-
-1. Read the explanation and look at the code.
-2. Run `example.js` and predict the output **before** checking the terminal.
-3. Change a value or condition and run it again.
-4. Try the questions in `PRACTICE.md` without copying the example.
-5. Use the idea in the [mini project](./mini-project/README.md).
-
-The point is not to memorize syntax. It's to understand **when the idea solves a problem**.
-
-> These are learning notes, not a claim that I've mastered JavaScript. I'll keep updating them as I build more projects.
+I try to predict the output first, then run the code and change a value to see what happens.

@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f7f8fb; color: #1f2937; font: 16px/1.5 system-ui, sans-serif; }
+.container { width: min(900px, 92%); margin: 48px auto; }
+header { margin-bottom: 24px; }
+h1 { margin: 0 0 6px; font-size: 2rem; }
+p { color: #4b5563; }
+.eyebrow { color: #1d4ed8; font-size: 0.85rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+.controls { background: white; border: 1px solid #e5e7eb; padding: 20px; border-radius: 12px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px 16px; }
+.field { display: grid; gap: 8px; }
+.controls label { font-size: .9rem; font-weight: 600; }
+input, select { min-width: 0; padding: 11px; border: 1px solid #cbd5e1; border-radius: 8px; background: white; font: inherit; }
+input:focus-visible, select:focus-visible { outline: 2px solid #2563eb; outline-offset: 2px; }
+.products { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.product { background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; }
+.product h2 { margin: 0 0 8px; font-size: 1.15rem; }
+.price { font-weight: 700; color: #111827; }
+.empty { padding: 20px; background: white; border-radius: 12px; }
+@media (max-width: 650px) { .controls { grid-template-columns: 1fr; } .container { margin: 24px auto; } }

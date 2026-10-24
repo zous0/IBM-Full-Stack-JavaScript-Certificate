@@ -1,4 +1,4 @@
-// Run: node 09-Functions/example.js
+// Run: node 09-functions/example.js
 function calculateTotal(price, quantity) {
   return price * quantity;
 }

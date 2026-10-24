@@ -1,4 +1,4 @@
-// Run: node 13-Iteration/example.js
+// Run: node 13-iteration/example.js
 const skills = ['HTML', 'CSS', 'JavaScript'];
 console.log('for...of over array values:');
 for (const skill of skills) {
